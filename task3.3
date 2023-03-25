@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Send a request to guvi.in and get the HTTP status code
+http_code=$(curl -s -o /dev/null -w "%{http_code}" https://guvi.in)
+
+# Check if the HTTP status code is 2xx or 3xx, which indicates success
+if [[ "$http_code" =~ ^[2-3][0-9][0-9]$ ]]; then
+  echo "Request to guvi.in succeeded with HTTP status code $http_code"
+else
+  echo "Request to guvi.in failed with HTTP status code $http_code"
+fi
+
+1. The sun was setting behind the mountains, casting a warm glow over the valley below.
+2. Mary picked up her pen and began to write in her journal, reflecting on the events of the day.
+3. As the wind blew through the trees, she could hear the leaves rustling and the birds chirping.
+4. In the distance, she could see a small village nestled among the hills.
+5. Welcome to the village of Oakdale, where the people are friendly and the scenery is breathtaking.
+6. The locals are always happy to give visitors a warm welcome and show them around.
+7. There's a quaint little coffee shop on the corner where you can get a delicious cup of coffee and a pastry.
+8. The village is also known for its beautiful gardens, which are open to the public all year round.
+9. If you're looking for some adventure, there are plenty of hiking trails and scenic drives in the surrounding area.
+10. The hills are dotted with wildflowers and the air is filled with the scent of pine and cedar.
+11. As Mary explored the village, she couldn't help but feel at peace in this beautiful place.
+12. She
